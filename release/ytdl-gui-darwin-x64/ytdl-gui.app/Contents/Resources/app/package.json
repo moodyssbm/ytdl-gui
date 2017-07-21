@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "electron app.js",
-    "package": "electron-packager . --overwrite --platform=darwin --arch=x64 --version=1.6.11 --prune=true --out=release"
+    "package": "electron-packager . --overwrite --platform=darwin --arch=x64 --electron-version=1.6.11 --prune=true --out=release"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "dependencies": {
     "child_process": "^1.0.2",
     "electron": "^1.6.11",
-    "electron-packager": "^8.7.2"
+    "electron-packager": "^8.7.2",
+    "menu": "^0.2.5"
   }
 }

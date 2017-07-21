@@ -11,9 +11,19 @@ let vidName = gbi('vidName');
 let	vidURL = gbi('vidURL');
 let getVidButton = gbi('getVidButton');
 
+let current;
+
+exec('ls /usr/local/cellar/youtube-dl', function(err,stdout,stderr)
+	{
+		current = stdout;
+		current = current.substring(0,10);
+});
+
 function getVid()
 {
-	let command = 'youtube-dl ';
+	let command = '/usr/local/cellar/youtube-dl/';
+	command += current;
+	command += '/bin/youtube-dl ';
 	command += vidURL.value;
 	command += ' -o ~/Movies/';
 	command += vidName.value;
@@ -23,7 +33,7 @@ function getVid()
 	{
 		if(err)
 		{
-			console.log("We got an error.", stdout);
+			console.log("We got an error.");
 		}
 		else
 		{
