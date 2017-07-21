@@ -1,0 +1,29 @@
+{
+  "name": "ytdl-gui",
+  "version": "1.0.0",
+  "description": "A GUI for using the YouTube-DL package from Homebrew.",
+  "main": "app.js",
+  "scripts": {
+    "test": "electron app.js",
+    "package": "electron-packager . --overwrite --platform=darwin --arch=x64 --version=1.6.11 --prune=true --out=release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/moodyssbm/ytdl-gui.git"
+  },
+  "keywords": [
+    "electron",
+    "youtube-dl"
+  ],
+  "author": "Ethan Moody",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moodyssbm/ytdl-gui/issues"
+  },
+  "homepage": "https://github.com/moodyssbm/ytdl-gui#readme",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "electron": "^1.6.11",
+    "electron-packager": "^8.7.2"
+  }
+}

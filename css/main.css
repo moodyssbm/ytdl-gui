@@ -1,0 +1,15 @@
+body {
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  background: #221a0f;
+  color: #a57a4c; }
+
+input {
+  background: #221a0f;
+  color: #a57a4c;
+  font-size: 20px; }
+
+h1, h3, p {
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
