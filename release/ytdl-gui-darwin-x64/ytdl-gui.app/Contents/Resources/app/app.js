@@ -70,7 +70,7 @@ function adjustForDebug(cond, w)
 const winOpts =
 {
 	width: adjustForDebug(debugMode, 600),
-	height: 350
+	height: 375
 }
 
 app.on('window-all-closed', function()
