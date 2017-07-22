@@ -4,10 +4,23 @@ body {
   background: #221a0f;
   color: #a57a4c; }
 
-input {
-  background: #221a0f;
-  color: #a57a4c;
-  font-size: 20px; }
+input[type=text] {
+  background: #8ab1b0;
+  color: #221a0f;
+  font-size: 15px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px; }
+
+input[type=text]:focus {
+  outline: none; }
+
+input[type=button] {
+  background: #8ab1b0;
+  color: #221a0f;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none; }
 
 h1, h3, p {
   text-align: center; }

@@ -5,16 +5,31 @@ $darker: #84613d
 $darkest: #5e452b
 $darkester: #221a0f
 
+$blue: #8ab1b0
+
 body
 	margin: 0px
 	font-family: $f
 	background: $darkester
 	color: $dark
 
-input
-	background: $darkester
-	color: $dark
+input[type=text]
+	background: $blue
+	color: $darkester
+	font-size: 15px
+	border: none
+	border-radius: 20px
+	padding: 10px
+
+input[type=text]:focus
+	outline: none
+
+input[type=button]
+	background: $blue
+	color: $darkester
 	font-size: 20px
+	border-radius: 20px
+	border: none
 
 h1, h3, p
 	text-align: center
