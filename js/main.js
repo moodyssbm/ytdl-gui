@@ -11,7 +11,7 @@ let vidName = gbi('vidName');
 let	vidURL = gbi('vidURL');
 let getVidButton = gbi('getVidButton');
 
-let current;
+let current; // for finding the current version of youtube-dl
 
 exec('ls /usr/local/cellar/youtube-dl', function(err,stdout,stderr)
 	{
