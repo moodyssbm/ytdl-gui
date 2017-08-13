@@ -27,6 +27,7 @@ function getVid()
 	command += vidURL.value;
 	command += ' -o ~/Movies/';
 	command += vidName.value;
+	command += '.mp4';
 
 	exec(command, function(err, stdout, stderr)
 	{

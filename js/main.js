@@ -10,6 +10,7 @@ function gbi(id)
 let vidName = gbi('vidName');
 let	vidURL = gbi('vidURL');
 let getVidButton = gbi('getVidButton');
+let stdoutdiv = gbi('stdoutdiv');
 
 let current; // for finding the current version of youtube-dl
 
@@ -21,12 +22,14 @@ exec('ls /usr/local/cellar/youtube-dl', function(err,stdout,stderr)
 
 function getVid()
 {
+	getVidButton.disabled = true;
 	let command = '/usr/local/cellar/youtube-dl/';
 	command += current;
 	command += '/bin/youtube-dl ';
 	command += vidURL.value;
 	command += ' -o ~/Movies/';
 	command += vidName.value;
+	command += '.mp4';
 
 	exec(command, function(err, stdout, stderr)
 	{
@@ -40,4 +43,5 @@ function getVid()
 			alert("Saved as " + vidName.value + " in ~/Movies");
 		}
 	});
+	getVidButton.disabled = false;
 }
