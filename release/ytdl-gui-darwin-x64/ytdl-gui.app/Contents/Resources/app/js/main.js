@@ -27,7 +27,6 @@ function getVid()
 	command += vidURL.value;
 	command += ' -o ~/Movies/';
 	command += vidName.value;
-	command += '.mkv';
 
 	exec(command, function(err, stdout, stderr)
 	{
@@ -38,8 +37,7 @@ function getVid()
 		else
 		{
 			console.log(stdout);
+			alert("Saved as " + vidName.value + " in ~/Movies");
 		}
 	});
-
-	console.log(command);
 }
